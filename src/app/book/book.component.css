@@ -1,0 +1,44 @@
+img{
+    width: 300px;
+    border-radius: 20px;
+}
+
+#cover{
+    z-index: 10;
+    width:400px;
+    position: absolute;
+    left: 35%;
+    top: 20%;
+    visibility: hidden;
+}
+
+.book_row{
+    height: 155px ;
+    width: 80%;
+    margin-left: 7%;
+    border-bottom: #a1a1a1 solid 1px;
+    display: inline-block;
+    z-index: 0;
+}
+
+.book_row_inside a{
+    display: inline;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.book_row_inside {
+    display: block;
+    margin-bottom: 40px;
+    width: 950px;
+    margin-right: 50px;
+    
+}
+
+.book_details{
+    display: inline-block; 
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 140px;
+}

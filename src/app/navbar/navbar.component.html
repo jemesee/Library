@@ -1,0 +1,29 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Travel2gether</title>
+  </head>
+  <body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding: 8px 16px;">
+      <div class="container-fluid">
+        <img src="assets/img/logo.png" style="padding-right: 25px;" alt="Logo and slogen" height="60" (click)="mainPage()">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav" >
+          <ul class="navbar-nav nav-tabs">
+            <li class="nav-item">
+             <form>
+              <input class="search_field" type="text" placeholder="Cím..." id="search_title" name="search_title" [(ngModel)]="title">
+              <input class="search_field" type="text" placeholder="Író..." id="search_name" name="search_name" [(ngModel)]="author">
+              <input class="search_field" type="text" placeholder="Egyéb..." id="search_more" name="search_more" [(ngModel)]="default">
+              <button type="submit" class="btn btn bg-light" id="search_button" style="margin-right:20px"><i class="fa fa-search" (click) = "search()"></i></button>
+            </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>

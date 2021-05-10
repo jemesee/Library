@@ -1,0 +1,30 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+  <img src="/assets/img/confusedDog.jpg" alt="confused" id=confused style="margin-top: -30px; width: 800px; margin-left: -200px;">
+
+  <div class="spinner-border text-primary" role="status" id="loader" >
+    <span class="sr-only">Loading...</span>
+  </div>
+
+  <img src="/assets/img/Corgo.png" alt="cover" id=cover>
+  <div class="book_row" *ngFor="let book of this.bookList">
+    <img [src]=book.cover onError="this.src='/assets/img/Corgo.png'" (click)="this.picGrown(book.cover)" />
+    <div class="book_details" (click)="goToBook(book.title, book.isbn)">
+      <div class="book_row_inside">
+        <a href={{book.author_key}} onError=""><strong>Szerző:</strong> {{book.author}}</a>
+        <a><strong>Cím:</strong> {{book.title}}</a>
+      </div>
+      <div class="book_row_inside">
+        <a><strong>ISBN:</strong> {{book.isbn}}</a>
+      </div>
+      <div class="book_row_inside">
+        <a><strong>Műfaj:</strong> <i *ngFor="let sub of book.main_subject"> {{sub}}, </i></a>
+      </div>
+    </div>
+  </div>
+
+</body>

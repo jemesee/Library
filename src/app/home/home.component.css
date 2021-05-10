@@ -1,0 +1,61 @@
+#cover{
+    z-index: 10;
+    width:400px;
+    position: absolute;
+    left: 35%;
+    top: 20%;
+    visibility: hidden;
+}
+
+#confused{
+    width:400px;
+    position: absolute;
+    left: 35%;
+    top: 20%;
+    display: none;
+}
+
+#loader{
+    position: absolute; 
+    margin-left: 40%;
+    z-index: -1; 
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+.book_row{
+    height: 155px ;
+    width: 85%;
+    margin-left: 7%;
+    border-bottom: #a1a1a1 solid 1px;
+    display: inline-block;
+    z-index: 0;
+}
+
+.book_row img{
+    height: 150px;
+    width: 120px;
+    display: inline-block;
+    vertical-align:top;
+}
+
+.book_row_inside a{
+    display: inline;
+    font-size: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.book_row_inside {
+    display: block;
+    width: 950px;
+}
+
+.book_details{
+    display: inline-block; 
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 140px;
+}
